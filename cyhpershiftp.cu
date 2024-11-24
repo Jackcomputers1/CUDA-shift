@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Kernel running on the GPU
+// Kernel running on the GPU t
 __global__ void encryptCaesar(char *d_input, char *d_output, int shift, int length) {
     int idx = threadIdx.x + blockIdx.x * blockDim.x;
 
